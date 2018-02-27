@@ -15,15 +15,15 @@ sudo apt-get install pocketsphinx*
     sudo apt-get install pocketsphinx-en-us
 
 cd catkin_ws/src
-git clone 已修改的pocketsphinx
-catkin_make
-
+git clone https://github.com/sunmaxwll/pocketsphinx.git
+cd pocketsphinx/
 ## 安装支持库:
 dpkg -i libsphinxbase1_0.8-6_amd64.deb
-
 dpkg -i libpocketsphinx1_0.8-5_amd64.deb
-
 dpkg -i gstreamer0.10-pocketsphinx_0.8-5_amd64.deb
+
+cd ..
+catkin_make
 
 ### 阳光明媚 备 2018.02.27
 
